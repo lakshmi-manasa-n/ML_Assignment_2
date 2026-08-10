@@ -1,0 +1,38 @@
+BITS VIRTUAL LAB - SIMPLE STEPS
+
+1. Upload ML_Assignment_2.zip to the BITS Virtual Lab.
+2. Unzip it:
+   unzip ML_Assignment_2.zip
+3. Enter the folder:
+   cd ML_Assignment_2
+4. Install dependencies:
+   pip install -r requirements.txt
+5. Train all models:
+   python model/train_models.py
+
+   IMPORTANT:
+   - This creates test_data.csv
+   - This creates model_comparison_results.csv
+   - This creates all .joblib files inside model/
+   - Keep the final model comparison output for your README/PDF.
+
+6. Verify generated files:
+   ls
+   ls model
+
+7. Start Streamlit:
+   streamlit run app.py --server.address 0.0.0.0 --server.port 8501
+
+8. If BITS does not expose port 8501 to your browser, that is okay.
+   The final public app is deployed later on Streamlit Community Cloud.
+   Take your BITS Virtual Lab screenshot from the executed training output/notebook.
+
+9. Upload the complete folder to GitHub.
+
+10. Deploy GitHub repo on Streamlit Community Cloud.
+
+If the UCI download is blocked:
+- Download spambase.data separately.
+- Put it directly inside the main ML_Assignment_2 folder.
+- Run:
+  python model/train_models.py
